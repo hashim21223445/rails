@@ -87,7 +87,7 @@ rack_version = ENV.fetch("RACK", "~> 3.0")
 if rack_version != "head"
   gem "rack", ">= 3.1.18", rack_version
 else
-  gem "rack", ">= 3.1.18", git: "https://github.com/rack/rack.git", branch: "main"
+  gem "rack", "~> 3.1", git: "https://github.com/rack/rack.git", branch: "main"
 end
 
 gem "useragent", require: false
